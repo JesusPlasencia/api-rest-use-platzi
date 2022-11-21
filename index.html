@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatitos API</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Gatos Aleatorios</h1>
+    <span id="error"></span>
+    <section class="randomMichis">
+        
+        <article>
+            <img alt="Foto Gato Aleatorio" id="img1" class="photo">
+            <button id="btnRandom1" onclick="saveFavouriteKitty()">Guardar Michi en Favoritos</button>
+        </article>
+
+        <article>
+            <img alt="Foto Gato Aleatorio" id="img2" class="photo">
+            <button id="btnRandom2" onclick="saveFavouriteKitty()">Guardar Michi en Favoritos</button>
+        </article>
+
+        <button id="search" onclick="loadRandomKitties()">Recargar</button>
+    </section>
+    <h1>Gatos Favoritos</h1>
+    <section id="favouriteMichis">
+        
+    </section>
+
+    <section id="uploadMichis">
+        <h2>Sube la foto de tu Gato</h2>
+        <form id="uploadingForm">
+            <input id="file" type="file" name="file">
+            <button type="button" onclick="uploadCatPhoto()">Subir foto de gato</button>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

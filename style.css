@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container {
+    flex: 1;
+    background-color: yellow;
+}
+
+#photo {
+    height: 400px;
+    width: auto;
+}
+
+.title-container {
+    flex: 5;
+    background-color: aquamarine;
+}
+
+#search {
+    display: block;
+    width: inherit;
+    height: 40px;
+}
